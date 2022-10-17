@@ -74,6 +74,6 @@ if __name__ == "__main__":
 					result.sort()
 					results.add(tuple(result))
 
-	print("Done (in %s s)"%(time.time() - start_time))
+	print("Done (found %s results in %s s)"%(len(results), time.time() - start_time))
 	for result in results:
 		print(prettify(result))
